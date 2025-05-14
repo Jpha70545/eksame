@@ -1,0 +1,143 @@
+body{
+    background-color:beige;
+    box-sizing:border-box;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+        width: auto;
+        height: 100%;
+ 
+
+}
+
+.header{
+    background-color: red;
+    display: flex;
+    flex-direction:row;
+    flex:1;
+        height: 50px;
+        width: 100%;
+        border: 5px solid white;
+        justify-content: center;
+}
+.nav{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border: 5px solid white;
+
+       
+   
+    }
+    .nav ul{
+        background-color: rgb(129, 19, 19);
+        height: 100px;
+        
+        
+    
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            justify-content: space-evenly;
+            flex:1;
+       
+        }
+    
+    li {
+        list-style-type:none;   /* fjerner prikken  */
+        
+    }
+    
+    a:link {
+        text-decoration: none;  /* fjerner understregen*/
+    }
+
+    
+        
+.main{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    flex-wrap: nowrap;
+        height: 100px;
+        width: 100%;
+        border: 5px solid white;
+}
+.box1{
+    width: 100%;
+    
+}
+.box2{
+    width: 100%;
+}
+
+.box3{
+    width: 100%;
+}
+.box4{
+    width: 100%;
+}
+.box5{
+    width: 100%;
+}
+.box6{
+    width: 100%;
+}
+
+.footer{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+        height: 100px;
+        width: 100%;
+        border: 5px solid white;
+ 
+}
+
+@media screen and (min-width:600px)
+{
+    
+    .main{
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        flex:4;
+            height: 100px;
+            width: 100%;
+            border: 5px solid white;
+    
+}
+.nav ul{
+        flex-direction: row;
+        }
+        .box1{
+            width: 50%;
+        }
+    
+    .box2{
+        width: 50%;
+    }
+    .box3{
+        width: 50%;
+    }
+    .box4{
+        width: 50%;
+    }
+    .box5{
+        width: 50%;
+    }
+    .box6{
+        width: 50%;
+    }
+
+
+}/* mediaQ slut */
