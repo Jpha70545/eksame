@@ -1,9 +1,9 @@
 body{
-    background-color:white;
+    background-color:#eae2d0;
     box-sizing:border-box;
     height: 100%;
-   
     margin: 0;
+  
    
 }
 .container{
@@ -19,20 +19,17 @@ body{
     display: flex;
     flex-direction:row;
     flex:1;
-        height: 50px;
-        width: 100%;
-        border: 5px solid white;
-        justify-content: center;
+    height: 50px;
+    width: 100%;
+    border: 5px solid white;
+    justify-content: center;
 }
 
-h1{
-    font-size: 30px;
-}
+
 
 .nav{
-    background-color: white;
-    height: 100px;
-    width: 100%;   
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -57,7 +54,7 @@ h1{
         text-decoration: none;  /* fjerner understregen*/
         color: white; /* skriften */
         color: black;
-        font-family: "Arial, sand-serif";
+        
         font-size: large;
     }
 
@@ -69,27 +66,49 @@ h1{
     flex-direction: column;
     flex:1;
     flex-wrap: nowrap;
-    width: 100%;
+    width:100%;
     border: 5px solid white;
 }
 
 .hero-image{
     background-image:url(forside.jpg);
-    height: 100%;
+    height: auto;
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 300px 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 300px;
+    padding-top: 300px;
 }
 .hero-tekst{
-    font-size: 200px;
+    font-size: 10vw;
     color: #eae2d0;
     text-align: center;
+    justify-content: center;
 }
 .hero-tekst2{
     font-size: 50px;
     color: #eae2d0;
     text-align: center;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .hero-image {
+        height: 50vh;/*tilpasser sig havldelen af skærmen*/
+        padding: 10px; /* Mindre padding for små skærme */
+    }
+
+    .hero-tekst {
+        font-size: 12vw; /* Dynamisk tekststørrelse */
+        padding: 10px;
+    }
+    .hero-tekst2 {
+            font-size: 12vw; /* Dynamisk tekststørrelse */
+            padding:10px
+    }
 }
 
 
@@ -114,24 +133,23 @@ h1{
     width: 100%;
 }
 
-.footer{
+.footer .kontakt{
     background-color:#eae2d0;
     display: flex;
-    justify-items: left;
+    text-align: end;
     flex-direction: column;
-    flex:8;
-    height: 100px;
-    width: 100%;
+    border: 50px;
+    margin: 10px;
+    padding:5px;
     
 }
-.logo{
-    width: 100%;
-}
-.footer{
-    width: 100%;
+
+.kontakt{
+   padding: 10px;
+   margin: 10px;  
 }
 
-@media screen and (max-width:600px)/*max= den størrelse og under, det er det højeste skærmen må være*/
+@media screen and (max-width:500px)/*max= den størrelse og under, det er det højeste skærmen må være*/
 {
     
     .main{
@@ -142,12 +160,11 @@ h1{
         height: 100px;
         width: 100%;
         border: 5px solid white;
+  
     
    
 }
-h1{
-    font-size: 20px;
-}
+
 
 .nav ul{
         flex-direction: column;
@@ -155,27 +172,12 @@ h1{
         
 }
      
-.footer{
-      
-    flex-direction: row;
-        }
-        .logo{
-            width:100%;
-        }
-        .footer{
-            width: 100%;
-        }
 
-       
-        
-    
-    }
-    
+}
 
 
 
 
-        /* mediaQ slut */
 
 
     
