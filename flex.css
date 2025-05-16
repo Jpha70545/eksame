@@ -12,6 +12,9 @@ body{
     flex-wrap:wrap;
     width: auto;
     height: 100%;
+    border-bottom: solid white 10px;
+    
+    
 }
 
 .header{
@@ -54,8 +57,6 @@ body{
         text-decoration: none;  /* fjerner understregen*/
         color: white; /* skriften */
         color: black;
-        
-        font-size: large;
     }
 
     
@@ -64,10 +65,8 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    flex:1;
-    flex-wrap: nowrap;
-    width:100%;
-    border: 5px solid white;
+    flex-wrap: wrap;
+    width:100%; 
 }
 
 .hero-image{
@@ -81,6 +80,7 @@ body{
     padding-left: 50px;
     padding-bottom: 300px;
     padding-top: 300px;
+    
 }
 .hero-tekst{
     font-size: 10vw;
@@ -111,7 +111,15 @@ body{
     }
 }
 
-
+.textbox1{
+    text-align: center;
+    justify-content: center;
+    border-bottom: solid white 20px;
+    border-top: solid white 20px;
+}
+.textbox2{
+    padding: 10px;
+}
 
 .box1{
     width: 100%;
@@ -133,14 +141,12 @@ body{
     width: 100%;
 }
 
-.footer .kontakt{
+.footer{
+    
     background-color:#eae2d0;
     display: flex;
     text-align: end;
     flex-direction: column;
-    border: 50px;
-    margin: 10px;
-    padding:5px;
     
 }
 
@@ -148,6 +154,8 @@ body{
    padding: 10px;
    margin: 10px;  
 }
+
+
 
 @media screen and (max-width:500px)/*max= den størrelse og under, det er det højeste skærmen må være*/
 {
@@ -174,12 +182,6 @@ body{
      
 
 }
-
-
-
-
-
-
     
         .box1{
             width: 50%;
