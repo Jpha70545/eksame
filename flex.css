@@ -133,9 +133,14 @@ section{
     width:50%
     
 }
-
+.indhold{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .image-container{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap:20px;
     height: auto;
@@ -153,10 +158,10 @@ section{
     border:solid orange 20px;
     margin-left: 50px;
 }
-.image1{
-    display: flex;
+.image{
+    display: inline-flex;
     padding:10px;
-    
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
@@ -205,11 +210,22 @@ section{
 
 
 .box1{
-    width: 100%;
-    background-color:white; 
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    
+    border-radius: 8px;
+    text-align: center;
 }
 .box2{
-    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+  
+    border-radius: 8px;
+    text-align: center;
 }
 .box3{
     width: 100%;
