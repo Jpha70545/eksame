@@ -135,10 +135,12 @@ section{
 }
 .indhold{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    
 }
-.image-container{
+/*.image-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,7 +151,7 @@ section{
     margin-left: 50px;
 }
 
-.image-container2{
+/*.image-container2{
     display: flex;
     justify-content: space-between;
     gap:20px;
@@ -157,15 +159,17 @@ section{
     width: 50%;
     border:solid orange 20px;
     margin-left: 50px;
-}
+}*/
+
 .image{
-    display: inline-flex;
+    display: inline-flex; /* billedet opfører sig ligesom resten af indholdet, så det kommer til at stå på samme linje*/
     padding:10px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
     height:auto;
+   
 }
 .image2{
     display: flex;
@@ -174,7 +178,7 @@ section{
     width: 25%;
     height:auto;
 }
-.overlay-text{
+/*.overlay-text{
     display: flex;
     text-align: flex-end;
     padding: 10px;
@@ -188,8 +192,10 @@ section{
     opacity:0;
     transition:1s;
     background-color: #008CBA;
-    border:solid green 20px;*/
-}
+    border:solid green 20px;
+    }
+*/
+
 .p1:hover .overlay {
     opacity: 10;
 }
