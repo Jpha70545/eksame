@@ -8,10 +8,8 @@ body{
 .container{ /*Navigation*/
     display: flex;
     flex-direction: column;
-    
     width: auto;
-
-    border-bottom: solid #e29059 10px;
+    border-bottom: solid #d27528 10px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -42,10 +40,10 @@ body{
     
     a:link {
         text-decoration: none;  /* fjerner understregen*/
-        color: white; /* skriften */
-        color: black;
+       
+        color: black
     }
-    @media screen and (max-width:500px)/*max= den størrelse og under, det er det højeste skærmen må være*/
+    @media screen and (max-width:400px)/*max= den størrelse og under, det er det højeste skærmen må være*/
     {
         .main{
             display: flex;
@@ -59,24 +57,35 @@ body{
             flex-direction: column;      
     }
     }
-section{ /*Forside tekst "hvem er jeg"*/
+section{ /*større tekst bokse, forside, side 1,2*/
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-bottom: solid #e29059 10px;
+    border-bottom: solid #d27528 10px;
+    
 }
 
-        
+
+@media screen and (max-width: 400px){
+    section{ /*større tekst bokse, forside, side 1,2*/
+      
+        flex-direction: column;
+        text-align: center;
+      font-size: 10px;
+}
+    
+}        
 .main {
-    background-color: #e29059;
+    background-color: #d27528;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width:100%; 
 }
+
 .hero{ /* Kontakt billede*/
   
-    background-image:url(mig-kopi.jpg);
+    background-image:url(billeder/mig.jpg);
     height: auto;
     width: auto;
     background-position: center;
@@ -86,8 +95,10 @@ section{ /*Forside tekst "hvem er jeg"*/
     padding-left: 50px;
     padding-bottom: 300px;
     padding-top: 300px;
-        
+    align-content: center;
+    border-bottom:solid #d27528 10px;
     }
+
    
     .hero-2{/* Kontakt navn*/
         font-size: 50px;
@@ -101,11 +112,11 @@ section{ /*Forside tekst "hvem er jeg"*/
         color: #eae2d0;
         text-align: left; 
     }
+a.style { /*W3 school*/
+    color:#eae2d0;
+    text-decoration:none;
+}
 
-    .mail:link{ /*Mail link*/
-        text-decoration: none;
-        color:red;
-    }
 
 .hero-tekst{ /*Forside*/
     font-size: 10vw;
@@ -119,10 +130,46 @@ section{ /*Forside tekst "hvem er jeg"*/
     text-align: center;
     
 }
-
+@media screen and (max-width: 400px) { /* Kontakt billede*/
+    .hero{ 
+        height: 50vh;
+        padding: 10px;
+            
+        }
+       
+        .hero-2{/* Kontakt navn*/
+            font-size: 40px;
+            color: #eae2d0;
+            text-align: center;
+            
+            
+        }
+        .hero-3{/* mail og tlf.*/
+            font-size: 20px;
+            color: #eae2d0;
+            text-align: center; 
+        }
+    
+    
+    
+    .hero-tekst{ /*Forside*/
+        font-size: 10vw;
+        color: #eae2d0;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-tekst2{/*Forside*/
+        font-size: 50px;
+        color: #eae2d0;
+        text-align: center;
+        
+    }
+    
+    
+}
 
 .hero-image{/*Forside billede*/
-    background-image:url(forside.jpg);
+    background-image:url(billeder/forside.jpg);
     height: auto;
     width: auto;
     background-position: center;
@@ -147,9 +194,9 @@ section{ /*Forside tekst "hvem er jeg"*/
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .hero-image {
-        height: 50vh;/*tilpasser sig havldelen af skærmen*/
+        height: 50vh¨;/*tilpasser sig havldelen af skærmen*/
         padding: 10px; /* Mindre padding for små skærme */
     }
 
@@ -166,21 +213,22 @@ section{ /*Forside tekst "hvem er jeg"*/
 .textbox1{ /*forside tekst*/
     text-align: center;
     justify-content: center;
-    border-top: solid#e29059 10px;
+    border-top: solid#d27528 10px;
 }
 
 
 
 .indhold{ /*side 1*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center; 
+    flex-wrap: wrap;  
 }
-
+.indhold > * {
+width: 50%;
+}
     
-
-
 .image{ /*Billede1*/
     display: inline-flex; /* billedet opfører sig ligesom resten af indholdet, så det kommer til at stå på samme linje*/
     padding:10px;
@@ -198,25 +246,31 @@ section{ /*Forside tekst "hvem er jeg"*/
     width: 25%;
     height:auto;
 }
-
-.dropdown {
+.video{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    height:auto;
+}
+.dropdown { /*projekt bokse*/
     position: relative;
     display: inline-block;
   }
   
-  .dropdown-content {
+  .dropdown-content { /*projekt bokse*/
     display: none;
     position: relative;
-    background-color: #e29059;
+    background-color: #d27528;
     min-width: 160px;
     z-index: 1; /*Det gør at boksen ryger uden på øverste boks*/
     padding: 12px 16px;
-    border:solid #e29059 5px;
+    border:solid #d27528 5px;
     border-radius: 8px;
     
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content { /*projekt bokse*/
     display: block;
   }
 
@@ -231,31 +285,142 @@ section{ /*Forside tekst "hvem er jeg"*/
     
     border-radius: 8px;
     text-align:center;
+    
 }
+
+@media screen and (max-width: 400px){
+    .indhold{ /*side 1*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        flex-wrap: wrap;  
+        font-size: 10px;
+    }
+    .indhold > * {
+    width: 50%;
+    justify-content:center;
+    }
+    
+    .image{ /*Billede1*/
+        display: inline-flex; /* billedet opfører sig ligesom resten af indholdet, så det kommer til at stå på samme linje*/
+  
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        height:auto;
+        justify-content:center;
+    }
+    .image2{ /*Billede2*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height:auto;
+        justify-content:center;
+    }
+    
+    .dropdown { /*projekt bokse*/
+     
+        display: inline-block;
+        
+      }
+      
+      .dropdown-content { /*projekt bokse*/
+        display: none;
+        background-color: #d27528;
+        min-width: 100px;
+        z-index: 1; /*Det gør at boksen ryger uden på øverste boks*/
+        border:solid #d27528 5px;
+        border-radius: 8px;
+        justify-items: center;
+        font-size: 10px;
+        
+      }
+      
+    .dropdown-content { /*projekt bokse*/
+        display: block;
+        padding:5px;
+      }
+
+    .box1 .box6{ /*side1 (6 bokse) */
+        flex-wrap: wrap;
+    }
+}
+
 
 .footer{
     
-    background-color:white;
+    background-color:#eae2d0;
     display: flex;
-    text-align: end;
+   align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding:10px 30px;
     
     
 }
 
-.kontakt{ /*footer*/
+
+.kontakt
+{ /*footer*/
    padding: 10px;
-   margin: 10px;  
-   justify-content: space-between;
+   margin: 0;  
+  width: 50%;
   
 }
+
+
 .logo{/*footer*/
-    display: flex;
-    justify-content: flex-end;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+   
+    text-align: right;
 }
+
+.logo-container {
+    display: flex;
+    text-align: right;
+    width: 50%;
+    justify-content: right;
+}
+
+    
+@media screen and (max-width: 400px){
+    .footer{
+        display: flex;
+       text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding:10px 30px;
+        height: 750x;
+        
+        
+    }
+    
+    .kontakt{ /*footer*/
+       padding: 10px;
+       margin: 0;  
+      width: 100%;
+      justify-content: center;
+      font-size: 10px;
+      
+    }
+    
+    
+    .logo{/*footer*/
+        width: 50px;
+    }
+    
+    .logo-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
 
 
 

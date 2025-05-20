@@ -2,6 +2,7 @@
 <html lang="da">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> projekt</title>
     </head>
         <body>
@@ -9,15 +10,16 @@
                 <link rel="stylesheet" href="flex.css">
             <header>
 
-        <div class="container">
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="side1.html">Projekt</a></li>
-                    <li><a href="side2.html">Kontakt mig</a></li>
-                    </ul>
-            </nav>
-        </div>
+                <div class="container">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="index.html">Hjem</a></li>
+                            <li><a href="side1.html">Projekt</a></li>
+                            <li><a href="side2.html">Kontakt mig</a></li>
+                             </ul>
+                    </nav>
+                </div>
+        
         <section>
             <h1> Projekter </h1>
             <h4>Som multimediedesigner har jeg haft fingrene i alt fra idéudvikling til færdige løsninger.
@@ -34,7 +36,7 @@
                     <div class="box1">
                         <h2>Illustrationer</h2>
                             <div class="dropdown">
-                                <span><img src="portrait.jpg" alt="billede af mig" class="image"></span>
+                                <span><img src="billeder/portrait.jpg" alt="billede af mig" class="image"></span>
                                     <div class="dropdown-content">
                                         <p>Jeg skulle ved brug af pentool tegne et selvportræt, udfra et eksisterende billede.
                                         <br>Dette er blevet udarbejdet i Adobe illustrator. 
@@ -49,7 +51,9 @@
                     <div class="box2">
                         <h2> Moving art</h2>
                             <div class="dropdown">
-                                <span><img src="portrait.jpg" alt="billede af mig" class="image"></span>
+                                <video width="320" height="240" controls>
+                                    <source src="billeder/movingart.mp4" type="video/mp4">
+                                </video>
                                     <div class="dropdown-content">
                                         <p>Denne opgave gik ud på, at vi skulle vække et maleri til live og fortælle en historie.
                                         <br> Jeg fik bl.a. dronninges arm til at bevæge sig, hvorefter kronen falder ned på Frederiks hoved.
@@ -62,7 +66,7 @@
                     <div class="box3">
                         <h2> Foto</h2>
                             <div class="dropdown">
-                                <span><img src="portrait.jpg" alt="billede af mig" class="image"></span>
+                                <span><img src="billeder/IMG_6296.jpg" alt="produkt billeder" class="image"></span>
                                  <div class="dropdown-content">
                                     <p>Jeg har arbjedet med at tage produkt billeder, hvor de efterfølgende er blevet behandlet i Adobe Light Room Classic</p>
                                 </div>
@@ -72,9 +76,13 @@
                     <div class="box4">
                         <h2> Film</h2>
                             <div class="dropdown">
-                                <span><img src="portrait.jpg" alt="billede af mig" class="image"></span>
+                                <video width="320" height="240" controls>
+                                    <source src="billeder/Film.mp4" type="video/mp4">
+                                </video>
+                                
                                     <div class="dropdown-content">
-                                         <p>tekstkstkstkstkstkstkst</p>
+                                         <p>Her har jeg arbejdet med Adobe Premier Pro
+                                            <br> Jeg har filmet sekvensen, og derefter redigeret den hvor jeg har lagt effekter ind over</p>
                                         </div>
                                     </div>            
                                 </div>
@@ -83,7 +91,7 @@
                     <div class="box5">
                         <h2> Plakat</h2>
                              <div class="dropdown">
-                                <span><img src="portrait.jpg" alt="billede af mig" class="image"></span>
+                                <span><img src="billeder/p1.jpg" alt="muldvarp" class="image"></span>
                                     <div class="dropdown-content">
                                         <p>I forbindelse med et instalationsprojekt, skulle vi udarbejde en plakat.
                                         <br> Den skulle fortælle omkring den virtuelle Morten muldvarp, som lever under jorden. Her lagde vi vægt på tonen til mindre børn.
@@ -97,7 +105,7 @@
                     <div class="box6">
                         <h2> Digital værktøj</h2>
                             <div class="dropdown">
-                                <span><img src="portrait.jpg" alt="billede af mig" class="image"></span>
+                                <span><img src="billeder/figma.jpg" alt="figma" class="image"></span>
                                     <div class="dropdown-content">
                                         <p> Jeg har lavet layout i Fimga, for bedre at kunne skabe et visuelt indtryk af opsætning af hjemmesider.
                                         <br> Har hertil brugt Figma. 
@@ -109,19 +117,26 @@
             </main>
                 
                
-        <Footer>
-            <div class="kontakt">
-                <h3>Kontakt informationer</h3>  
-                    <p>Janne Park Hansen
-                    <br>
-                    Broløkkevej 104
-                    <br>
-                    5250 Odense
-                    <br>
-                    Hansen_789@hotmail.com</p>
-                </div>
-              
-        </Footer>
+            <footer>
+                <div class="footer">
+                    <div class="kontakt">
+                        <h3>Kontakt informationer</h3>  
+                            <p>Janne Park Hansen
+                            <br>
+                            Broløkkevej 104
+                            <br>
+                            5250 Odense
+                            <br>
+                            jpha70545@edu.ucl.dk</p>
+                            </div>
+                            <div class="logo-container">
+                                <a href="index.html">
+                                <img src="billeder/logo.png" alt="JPhansenlogo" class="logo"/>
+                                </a>
+                            </div>
+                        </div>
+                
+            </footer>
     </body>
   
     
