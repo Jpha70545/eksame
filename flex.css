@@ -1,20 +1,18 @@
 body{
     background-color:#eae2d0;
-    
+  
     height: 100%;
     margin: 0;
-
-   
 }
+
 .container{ /*Navigation*/
     display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
+    
     width: auto;
-    height: 100%;
-    border-bottom: solid #e29059 20px;
-    
-    
+
+    border-bottom: solid #e29059 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -30,7 +28,7 @@ body{
         height: 100px;
             display: flex;
             flex-direction: row;
-            justify-content:center;
+            
             justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
@@ -47,18 +45,30 @@ body{
         color: white; /* skriften */
         color: black;
     }
-
-section{ /*Forside tekst*/
+    @media screen and (max-width:500px)/*max= den størrelse og under, det er det højeste skærmen må være*/
+    {
+        .main{
+            display: flex;
+            flex-direction: column;
+            flex:4;
+            height: 100px;
+            width: 100%;
+            border: 5px solid white;   
+    }
+    .nav ul{
+            flex-direction: column;      
+    }
+    }
+section{ /*Forside tekst "hvem er jeg"*/
     display: flex;
     flex-direction: column;
     text-align: center;
     border-bottom: solid #e29059 10px;
-   
 }
 
         
-.main{
-    background-color: white;
+.main {
+    background-color: #e29059;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -83,7 +93,7 @@ section{ /*Forside tekst*/
         font-size: 50px;
         color: #eae2d0;
         text-align: left;
-        color: #eae2d0;
+        
         
     }
     .hero-3{/* mail og tlf.*/
@@ -111,7 +121,7 @@ section{ /*Forside tekst*/
 }
 
 
-.hero-image{/*Forside*/
+.hero-image{/*Forside billede*/
     background-image:url(forside.jpg);
     height: auto;
     width: auto;
@@ -124,53 +134,44 @@ section{ /*Forside tekst*/
     padding-top: 300px;
     
 }
-.hero-tekst{
+.hero-tekst{ /*forsidebillede tekst*/
     font-size: 10vw;
     color: #eae2d0;
     text-align: center;
     justify-content: center;
 }
-.hero-tekst2{
+.hero-tekst2{ /*forsidebillede tekst*/
     font-size: 50px;
     color: #eae2d0;
     text-align: center;
     
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .hero-image {
         height: 50vh;/*tilpasser sig havldelen af skærmen*/
         padding: 10px; /* Mindre padding for små skærme */
     }
 
     .hero-tekst {
-        font-size: 12vw; /* Dynamisk tekststørrelse */
-        padding: 10px;
+        font-size: 8vw; /* Dynamisk tekststørrelse */
+        padding: 5px;
     }
     .hero-tekst2 {
-            font-size: 12vw; /* Dynamisk tekststørrelse */
-            padding:10px
+            font-size: 8vw; /* Dynamisk tekststørrelse */
+            padding:5px
     }
 }
 
 .textbox1{ /*forside tekst*/
     text-align: center;
     justify-content: center;
-    
-    border-top: solid#e29059 20px;
-}
-.textbox2{ /*forside tekst*/
-    padding: 10px;
+    border-top: solid#e29059 10px;
 }
 
-.p1{
-    display: flex;
-    justify-content: center;
-    position:relative;
-    width:50%
-    
-}
-.indhold{
+
+
+.indhold{ /*side 1*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -180,7 +181,7 @@ section{ /*Forside tekst*/
     
 
 
-.image{
+.image{ /*Billede1*/
     display: inline-flex; /* billedet opfører sig ligesom resten af indholdet, så det kommer til at stå på samme linje*/
     padding:10px;
     justify-content: center;
@@ -190,7 +191,7 @@ section{ /*Forside tekst*/
     height:auto;
    
 }
-.image2{
+.image2{ /*Billede2*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -221,7 +222,7 @@ section{ /*Forside tekst*/
 
 
 
-.box1{
+.box1 .box6{ /*side1 (6 bokse) */
     flex-wrap: wrap;
     background-color: white;
     padding: 20px;
@@ -231,91 +232,31 @@ section{ /*Forside tekst*/
     border-radius: 8px;
     text-align:center;
 }
-.box2{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    width: 50%;
-  
-    border-radius: 8px;
-    text-align: center;
-}
-.box3{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    width: 50%;
-  
-    border-radius: 8px;
-    text-align: center;
-}
-.box4{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    width: 50%;
-  
-    border-radius: 8px;
-    text-align: center;
-}
-.box5{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    width: 50%;
-  
-    border-radius: 8px;
-    text-align: center;
-}
-.box6{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    width: 50%;
-  
-    border-radius: 8px;
-    text-align: center;
-}
 
 .footer{
     
-    background-color:#eae2d0;
+    background-color:white;
     display: flex;
     text-align: end;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    
     
 }
 
-.kontakt{
+.kontakt{ /*footer*/
    padding: 10px;
    margin: 10px;  
-}
-
-
-
-@media screen and (max-width:500px)/*max= den størrelse og under, det er det højeste skærmen må være*/
-{
-    
-    .main{
-        
-        display: flex;
-        flex-direction: column;
-        flex:4;
-        height: 100px;
-        width: 100%;
-        border: 5px solid white;
+   justify-content: space-between;
   
-    
-   
+}
+.logo{/*footer*/
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+    height: 50px;
 }
 
 
-.nav ul{
-        flex-direction: column;
-        
-        
 
-     
 
-}
-}
