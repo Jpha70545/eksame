@@ -4,41 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> projekt</title>
+        <link rel="stylesheet" href="flex.css">
     </head>
         <body>
             <header>
-                <link rel="stylesheet" href="flex.css">
-            <header>
-
-                <div class="container">
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="index.html">Hjem</a></li>
-                            <li><a href="side1.html">Projekt</a></li>
-                            <li><a href="side2.html">Kontakt mig</a></li>
-                             </ul>
-                    </nav>
+                <div class="header_container">
+                    <div class="container">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="index.html">Hjem</a></li>
+                                <li><a href="side1.html">Projekt</a></li>
+                                <li><a href="side2.html">Kontakt mig</a></li>
+                                 </ul>
+                        </nav>
+                    </div>
                 </div>
-        
-        <section>
-            <h1> Projekter </h1>
-            <h4>Som multimediedesigner har jeg haft fingrene i alt fra idéudvikling til færdige løsninger.
+            </header>
+   
+        <section class="intro">
+            <h1 class="intro_title">Mine projekt</h1>
+            <p class="intro_text">Som multimediedesigner har jeg haft fingrene i alt fra idéudvikling til færdige løsninger.
                 <br> Herunder kan du se nogle af de projekter, jeg har haft fornøjelsen af at arbejde med.
                 <br>Har du spørgsmål – eller lyst til at tage en snak over en kop kaffe? Så er du mere end velkommen til at kontakte mig!
-            <h4>
+           </p>
         </section>
     
-    </header>
+    
             
             <main>
-                
-                <section class="indhold">
-                    
+                <section class="indhold">                 
                     <div class="box box--illustrationer">
                         <h2 class="box_title"> Illustrationer</h2>
-                            <div class="box-dropdown">
+                            <div class="box_dropdown">
                                 <span><img src="billeder/portrait.jpg" alt="billede af mig" class="box-image"></span>
-                                    <div class="box-dropdown-content">
+                                    <div class="box_dropdown_content">
                                         <p>Jeg skulle ved brug af pentool tegne et selvportræt, udfra et eksisterende billede.
                                         <br>Dette er blevet udarbejdet i Adobe illustrator. 
                                         </p>
@@ -49,11 +48,11 @@
                     <div class="box box--movingart">
                         
                         <h2 class="box_title">Moving art</h2>
-                            <div class="box-dropdown">
+                            <div class="box_dropdown">
                                 <video class="box-video" width="320" height="240" controls>
                                     <source src="billeder/movingart.mp4" type="video/mp4">
                                 </video>
-                                    <div class="box-dropdown-content">
+                                    <div class="box_dropdown_content">
                                         <p>Denne opgave gik ud på, at vi skulle vække et maleri til live og fortælle en historie.
                                         <br> Jeg fik bl.a. dronninges arm til at bevæge sig, hvorefter kronen falder ned på Frederiks hoved.
                                         <br> I den forbindelse benyttede jeg mig af programmet Adobe After Effect og Adobe Photoshop.
@@ -65,9 +64,9 @@
                 
                     <div class="box box--produkt">
                         <h2 class="box_title">Foto</h2>
-                            <div class="dropdown">
+                            <div class="box_dropdown">
                                 <span><img src="billeder/IMG_6296.jpg" alt="produkt billeder" class="box-image"></span>
-                                 <div class="dropdown-content">
+                                 <div class="box_dropdown_content">
                                     <p>Jeg har arbjedet med at tage produkt billeder, hvor de efterfølgende er blevet behandlet i Adobe Light Room Classic</p>
                                 </div>
                             </div>
@@ -75,13 +74,13 @@
 
                     <div class="box box--film">
                         <h2 class="box_title">Film</h2>
-                        <div class="dropdown">
+                        <div class="box_dropdown">
                                 <video class="box-video" width="320" height="240" controls>
                                     <source src="billeder/Film.mp4" type="video/mp4">
                                     Din browser understøtter ikke video-tagget.
                                 </video>
-                            </div>
-                                    <div class="dropdown-content">
+                            
+                                     <div class="box_dropdown_content">
                                          <p>Her har jeg arbejdet med Adobe Premier Pro
                                             <br> Jeg har filmet sekvensen, og derefter redigeret den hvor jeg har lagt effekter ind over</p>
                                         </div>
@@ -91,9 +90,9 @@
 
                     <div class="box box--plakat">
                         <h2 class="box_title"> Plakat</h2>
-                             <div class="dropdown">
+                             <div class="box_dropdown">
                                 <span><img src="billeder/p1.jpg" alt="muldvarp" class="box-image"></span>
-                                    <div class="dropdown-content">
+                                    <div class="box_dropdown_content">
                                         <p>I forbindelse med et instalationsprojekt, skulle vi udarbejde en plakat.
                                         <br> Den skulle fortælle omkring den virtuelle Morten muldvarp, som lever under jorden. Her lagde vi vægt på tonen til mindre børn.
                                         <br> Min opgave var at lave denne plakat, som er udarbejdet i 
@@ -105,9 +104,9 @@
 
                     <div class="box box--figma">
                         <h2 class="box_title">Digital værktøj</h2>
-                            <div class="dropdown">
+                            <div class="box_dropdown">
                                 <span><img src="billeder/figma.jpg" alt="figma" class="box-image"></span>
-                                    <div class="dropdown-content">
+                                    <div class="box_dropdown_content">
                                         <p> Jeg har lavet layout i Fimga, for bedre at kunne skabe et visuelt indtryk af opsætning af hjemmesider.
                                         <br> Har hertil brugt Figma. 
                                         </p>
@@ -120,23 +119,24 @@
                
             <footer>
                 <div class="footer">
-                    <div class="kontakt">
-                        <h3>Kontakt informationer</h3>  
-                            <p>Janne Park Hansen
-                            <br>
-                            Broløkkevej 104
-                            <br>
-                            5250 Odense
-                            <br>
-                            jpha70545@edu.ucl.dk</p>
-                            </div>
-                            <div class="logo-container">
-                                <a href="index.html">
-                                <img src="billeder/logo.png" alt="JPhansenlogo" class="logo"/>
+                    <div class="footer_kontakt">
+                        <h3 class="footer_heading"> kontakt informationer</h3>  
+                            <p class="footer_tekt">
+                                Janne Park Hansen
+                                <br>
+                                Broløkkevej 104
+                                <br>
+                                5250 Odense
+                                <br>
+                                Jpha70545@edu.ucl.dk
+                            </p>
+                        </div>
+                    <div class="footer_logo_container">
+                        <a href="index.html">
+                            <img src="billeder/logo.png" alt="JPhansenlogo" class="footer_logo"/>
                                 </a>
                             </div>
                         </div>
-                
             </footer>
     </body>
   

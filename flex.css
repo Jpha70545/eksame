@@ -3,14 +3,17 @@ body{
   
     height: 100%;
     margin: 0;
-}
 
-.container{ /*Navigation*/
+
+  }
+
+
+.header_containe{ /*Navigation*/
     display: flex;
     flex-direction: column;
     width: auto;
     border-bottom: solid #d27528 10px;
-    font-family: 'Times New Roman', Times, serif;
+  
 }
 
 
@@ -26,7 +29,6 @@ body{
         height: 100px;
             display: flex;
             flex-direction: row;
-            
             justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
@@ -40,9 +42,16 @@ body{
     
     a:link {
         text-decoration: none;  /* fjerner understregen*/
-       
         color: black
     }
+
+    .intro{
+        font-size: 30px;
+    }
+    .intro_tekst{
+        
+    }
+
     @media screen and (max-width:400px)/*max= den størrelse og under, det er det højeste skærmen må være*/
     {
         .main{
@@ -267,27 +276,28 @@ width: 50%;
 
 
 .box_dropdown { /*tekst bokse*/
-    /*position: relative;*/
+  
     display: inline-block;
     display: block;
   }
   
-  .box-dropdown-content { /*projekt bokse*/
+  .box_dropdown_content { /*projekt bokse*/
     display: none;
-    /*position: relative;*/
+   
     background-color: #d27528;
     min-width: 160px;
-    /*z-index: 1; Det gør at boksen ryger uden på øverste boks*/
+   
     padding: 12px 16px;
     border:solid #d27528 5px;
     border-radius: 8px;
-    
   }
   
- .box-dropdown:hover .box-dropdown-content { /*projekt bokse*/
+ .box_dropdown:hover .box_dropdown_content { /*projekt bokse*/
     display: block;
   }
 
+ 
+  
 
 
 
@@ -387,31 +397,33 @@ width: 50%;
     
     background-color:#eae2d0;
     display: flex;
-   align-items: center;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding:10px 30px;
+    padding:10px 30px;  
+}
+
+.footer_heading{
     
+}
+
+.footer_kontakt{ 
+    padding: 10px;
+    margin: 0;  
+    width: 50%;
+}
+.footer_tekt{
+    font-size: 20px;
     
 }
 
 
-.kontakt
-{ /*footer*/
-   padding: 10px;
-   margin: 0;  
-  width: 50%;
-  
+.footer_logo{
+    width:150px;
+    text-align:right;
 }
 
-
-.logo{/*footer*/
-    width: 150px;
-   
-    text-align: right;
-}
-
-.logo-container {
+.footer_logo_container {
     display: flex;
     text-align: right;
     width: 50%;
