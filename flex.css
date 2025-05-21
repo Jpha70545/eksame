@@ -2,7 +2,7 @@ body{
     background-color:#eae2d0;
     height: 100%;
     margin: 0;
-    padding:30px
+   
   }
 
 
@@ -12,11 +12,13 @@ body{
     width: auto;
     border-bottom: solid #d27528 10px;
 }
-
+/*-----------------------------------------------*/ 
 .nav{
     justify-content: center;
     text-align: center;
     font-size: 20px;
+    border-bottom: solid #d27528 10px;
+    
 }
 
 .nav ul{
@@ -37,8 +39,121 @@ body{
         text-decoration: none;  /* fjerner understregen*/
         color: black
     }
+  
+    
+    @media screen and (max-width:400px){/*max= den størrelse og under, det er det højeste skærmen må være*/
+    
+    .nav ul{
+            flex-direction: column;      
+    }
     .intro{
-        border-top: solid #d27528 10px;
+   
+        padding:10px
+    }
+    .intro_title{
+        font-size: 20px;
+    }
+    .intro_text{
+        font-size: 10px;
+    }
+    }
+
+    /*-----------------------------------------------*/
+
+/*@media screen and (max-width: 400px){
+    section{ 
+      
+        flex-direction: column;
+        text-align: center;
+      font-size: 10px;} */
+
+    /*-----------------------------------------------*/
+        
+.main {
+    background-color: #d27528;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;     
+}
+
+@media screen and (max-width:400px){/*max= den størrelse og under, det er det højeste skærmen må være*/
+        .main{
+            display: flex;
+            flex-direction: column;
+            flex:4;
+            height: 100px;
+            width: 100%;    
+    }
+    /*-----------------------------------------------*/
+}
+.hero-image{/*Forside billede*/
+    background-image:url(billeder/forside.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 300px;
+    padding-top: 300px;
+    border-bottom: solid #d27528 10px;
+    
+}
+.hero_title{ 
+    font-size: 10vw;
+    color: #eae2d0;
+    text-align: center;
+    justify-content: center;
+}
+.hero_head{ 
+    font-size: 40px;
+    color: #eae2d0;
+    text-align: center;  
+}
+.hero_text{ 
+    font-size: 30px;
+    color: #eae2d0;
+    text-align: center;  
+}
+
+@media screen and (max-width: 400px) {
+    .hero-image {
+        height: 50%;/*tilpasser sig havldelen af skærmen*/
+        padding: 10px; /* Mindre padding for små skærme */
+    }
+
+    .hero_head {
+        font-size: 15px; /* Dynamisk tekststørrelse */
+        padding: 5px;
+    }
+    .hero_text {
+            font-size: 10px; /* Dynamisk tekststørrelse */
+            padding:5px
+    }
+}
+
+.info{
+    text-align: center;
+}
+
+.info_title{
+   font-size: 30px;
+   margin:50px;
+}
+
+.info_text{
+    font-size: 20px;
+    padding:10px;
+    line-height: 30px;
+    margin:20px;
+}
+
+    
+    
+
+                                            /*SIDE 1*/ 
+
+  .intro{
+        
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -51,174 +166,7 @@ body{
     .intro_text{
         font-size: 20px;
     }
-    @media screen and (max-width:400px)/*max= den størrelse og under, det er det højeste skærmen må være*/
-    {
-        .main{
-            display: flex;
-            flex-direction: column;
-            flex:4;
-            height: 100px;
-            width: 100%;
-           
-            
-    }
-    .nav ul{
-            flex-direction: column;      
-    }
-    }
 
-
-
-
-@media screen and (max-width: 400px){
-    section{ /*større tekst bokse, forside, side 1,2*/
-      
-        flex-direction: column;
-        text-align: center;
-      font-size: 10px;
-}
-    
-}        
-.main {
-    background-color: #d27528;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:100%; 
-    
-}
-
-.hero{ /* Kontakt billede*/
-  
-    background-image:url(billeder/mig.jpg);
-    height: auto;
-    width: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 300px;
-    padding-top: 300px;
-    align-content: center;
-    border-bottom:solid #d27528 10px;
-    }
-
-   
-    .hero-2{/* Kontakt navn*/
-        font-size: 50px;
-        color: #eae2d0;
-        text-align: left;
-        
-        
-    }
-    .hero-3{/* mail og tlf.*/
-        font-size: 50px;
-        color: #eae2d0;
-        text-align: left; 
-    }
-a.style { /*W3 school*/
-    color:#eae2d0;
-    text-decoration:none;
-}
-
-
-.hero-tekst{ /*Forside*/
-    font-size: 10vw;
-    color: #eae2d0;
-    text-align: center;
-    justify-content: center;
-}
-.hero-tekst2{/*Forside*/
-    font-size: 50px;
-    color: #eae2d0;
-    text-align: center;
-    
-}
-@media screen and (max-width: 400px) { /* Kontakt billede*/
-    .hero{ 
-        height: 50vh;
-        padding: 10px;
-            
-        }
-       
-        .hero-2{/* Kontakt navn*/
-            font-size: 40px;
-            color: #eae2d0;
-            text-align: center;
-            
-            
-        }
-        .hero-3{/* mail og tlf.*/
-            font-size: 20px;
-            color: #eae2d0;
-            text-align: center; 
-        }
-    
-    
-    
-    .hero-tekst{ /*Forside*/
-        font-size: 10vw;
-        color: #eae2d0;
-        text-align: center;
-        justify-content: center;
-    }
-    .hero-tekst2{/*Forside*/
-        font-size: 50px;
-        color: #eae2d0;
-        text-align: center;
-        
-    }
-    
-    
-}
-
-.hero-image{/*Forside billede*/
-    background-image:url(billeder/forside.jpg);
-    height: auto;
-    width: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 300px;
-    padding-top: 300px;
-    
-}
-.hero-tekst{ /*forsidebillede tekst*/
-    font-size: 10vw;
-    color: #eae2d0;
-    text-align: center;
-    justify-content: center;
-}
-.hero-tekst2{ /*forsidebillede tekst*/
-    font-size: 50px;
-    color: #eae2d0;
-    text-align: center;
-    
-}
-
-@media screen and (max-width: 400px) {
-    .hero-image {
-        height: 50vh¨;/*tilpasser sig havldelen af skærmen*/
-        padding: 10px; /* Mindre padding for små skærme */
-    }
-
-    .hero-tekst {
-        font-size: 8vw; /* Dynamisk tekststørrelse */
-        padding: 5px;
-    }
-    .hero-tekst2 {
-            font-size: 8vw; /* Dynamisk tekststørrelse */
-            padding:5px
-    }
-}
-
-
-
-
-                                            /*SIDE 1*/ 
 
 .indhold{ 
    display: flex;
@@ -251,7 +199,6 @@ width: 30%;
 
     padding:10px;
     justify-content: center;
-  
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -292,7 +239,7 @@ width: 30%;
 
 
 @media screen and (max-width: 400px){
-    .indhold{ /*side 1*/
+    .indhold{ 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -304,7 +251,9 @@ width: 30%;
     width: 50%;
     justify-content:center;
     }
-    
+    .box_title{
+        font-size: 20px;
+    }
     .box-image{ 
         display:flex;
         flex-direction: column;
@@ -315,7 +264,7 @@ width: 30%;
         width: 100%;
         border-radius: 20px;
     }
-    }
+    
     
     .video{ 
         flex-wrap: wrap;
@@ -330,8 +279,7 @@ width: 30%;
       .dropdown-content { /*projekt bokse*/
         display: none;
         background-color: #d27528;
-        min-width: 50%;
-        
+        width: 50%;
         border:solid #d27528 5px;
         border-radius: 8px;
         justify-items: center;
@@ -346,9 +294,68 @@ width: 30%;
         justify-items: center;
       }
 
- 
+    }
 
 
+                                                /*SIDE 2*/
+
+.hero-imageko{ /* Kontakt billede*/
+  
+    background-image:url(billeder/mig.jpg);
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 300px;
+    padding-top: 300px;
+    align-content: center;
+    border-bottom:solid #d27528 10px;
+    }
+
+   
+    .hero_titleko{ /* Kontakt navn*/
+        font-size: 50px;
+        color: #eae2d0;
+        text-align: left;
+        
+    
+    }
+    .hero-3{/* mail og tlf.*/
+        font-size: 50px;
+        color: #eae2d0;
+        text-align: left; 
+    }
+a.style { /*W3 school*/
+    color:#eae2d0;
+    text-decoration:none;
+}
+/*@media screen and (max-width: 400px) { /* Kontakt billede*/
+.hero ko{ 
+    height: 50vh;
+    padding: 10px;
+        
+    }
+   
+    .hero-2ko{/* Kontakt navn*/
+        font-size: 40px;
+        color: #eae2d0;
+        text-align: center;
+        
+        
+    }
+    .hero-3ko{/* mail og tlf.*/
+        font-size: 20px;
+        color: #eae2d0;
+        text-align: center; 
+    }
+
+
+
+
+                                        /* NEDERSTE DEL AF SIDEN*/
 
 .footer{
     
