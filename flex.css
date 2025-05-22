@@ -40,6 +40,21 @@ body{
         color: black
     }
   
+    .info{
+        text-align: center;
+    }
+    
+    .info__title{
+       font-size: 30px;
+       margin:50px;
+    }
+    
+    .info__text{
+        font-size: 20px;
+        padding:10px;
+        line-height: 30px;
+        margin:20px;
+    }
     
     @media screen and (max-width:400px){/*max= den størrelse og under, det er det højeste skærmen må være*/
     
@@ -57,6 +72,7 @@ body{
         font-size: 10px;
     }
     }
+
 
     /*-----------------------------------------------*/
 
@@ -84,7 +100,7 @@ body{
 
 
 /*Forside billede*/
-.hero-image{
+.hero__image{
     background-image:url(billeder/forside.jpg);
     background-position: center;
     background-size: cover;
@@ -95,54 +111,39 @@ body{
     border-bottom: solid #d27528 10px;
     
 }
-.hero_title{ 
+.hero__title{ 
     font-size: 10vw;
     color: #eae2d0;
     text-align: center;
     justify-content: center;
 }
-.hero_head{ 
+.hero__head{ 
     font-size: 40px;
     color: #eae2d0;
     text-align: center;  
 }
-.hero_text{ 
+.hero__text{ 
     font-size: 30px;
     color: #eae2d0;
     text-align: center;  
 }
 
 @media screen and (max-width: 400px) {
-    .hero-image {
+    .hero__image {
         height: 50%;/*tilpasser sig havldelen af skærmen*/
         padding: 10px; /* Mindre padding for små skærme */
     }
 
-    .hero_head {
+    .hero__head {
         font-size: 15px; /* Dynamisk tekststørrelse */
         padding: 5px;
     }
-    .hero_text {
+    .hero__text {
             font-size: 10px; /* Dynamisk tekststørrelse */
             padding:5px
     }
 }
 
-.info{
-    text-align: center;
-}
-
-.info_title{
-   font-size: 30px;
-   margin:50px;
-}
-
-.info_text{
-    font-size: 20px;
-    padding:10px;
-    line-height: 30px;
-    margin:20px;
-}
 
     
     
@@ -157,17 +158,18 @@ body{
         border-bottom: solid #d27528 10px;
         padding:20px
     }
-    .intro_title{
-        font-size: 50px;
+    .intro__title{
+        font-size: 30px;
+        
     }
-    .intro_text{
+    .intro__text{
         font-size: 20px;
     }
     @media screen and (max-width: 400px) {
-        .intro_title{
+        .intro__title{
             font-size: 20px;
         }
-        .intro_text{
+        .intro__text{
             font-size: 15px;
         }
     }
@@ -184,22 +186,23 @@ body{
     justify-content: center;   
 }
 .indhold > * {
-width: 30%;
+width: 50%;
 }
 
 .box{   
    background-color: white;
     padding: 20px;
-    margin: 10px;
-    /*width: 50%;*/
+    margin: 50px;
     border-radius: 8px;
-    justify-items: center;
-   
+   width: 25%;
+   height: auto;
 }
-.box_title{
+
+.box__title{
     font-size: 40px;
+  
 }
-.box-image{ 
+.box__image{ 
 
     padding:10px;
     justify-content: center;
@@ -211,7 +214,7 @@ width: 30%;
 }
 
 
-.box-video{ 
+.box__video{ 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -222,13 +225,13 @@ width: 30%;
 }
 
 
-.box_dropdown { /*tekst bokse*/
+.box__dropdown { /*tekst bokse*/
   
     display: inline-block;
     display: block;
   }
   
-  .box_dropdown_content { /*projekt bokse*/
+  .box__dropdown__content { /*projekt bokse*/
     display: none;
     background-color: #d27528;
     min-width: 160px;
@@ -237,7 +240,7 @@ width: 30%;
     border-radius: 8px;
   }
   
- .box_dropdown:hover .box_dropdown_content { /*projekt bokse*/
+ .box__dropdown:hover .box__dropdown__content { /*projekt bokse*/
     display: block;
   }
 
@@ -252,13 +255,13 @@ width: 30%;
         font-size: 10px;
     }
     .indhold > * {
-    width: 50%;
+    width: 20%;
     justify-content:center;
     }
-    .box_title{
+    .box__title{
         font-size: 20px;
     }
-    .box-image{ 
+    .box__image{ 
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -280,7 +283,7 @@ width: 30%;
 
 
       
-      .dropdown-content { /*projekt bokse*/
+      .dropdown__content { /*projekt bokse*/
         display: none;
         background-color: #d27528;
         width: 50%;
@@ -292,7 +295,7 @@ width: 30%;
         
       }
       
-    .dropdown-content { /*projekt bokse*/
+    .dropdown__content { /*projekt bokse*/
         display: block;
         padding:5px;
         justify-items: center;
@@ -303,7 +306,20 @@ width: 30%;
 
                                                 /*SIDE 2*/
 
-.hero-kontakt{ /* Kontakt billede*/
+.info__kontakt{
+    text-align: center;
+}
+
+.info__kontakt__title{
+   font-size: 25px;
+   margin:50px;
+   text-align: center;
+}
+
+
+
+
+.hero__kontakt{ /* Kontakt billede*/
   
     background-image:url(billeder/mig.jpg);
     height: auto;
@@ -320,19 +336,24 @@ width: 30%;
     }
 
    
-    .hero_kontakt_title{ 
+    .hero__kontakt__title{ 
         font-size: 50px;
         color: #eae2d0;
         text-align: left;
     }
 
-    .hero_head_mail{
+    .hero__head__mail{
+        font-size: 30px;
+        color: #eae2d0;
+        text-align: left; 
+    }
+    .hero__telefon{
         font-size: 30px;
         color: #eae2d0;
         text-align: left; 
     }
 
-    a.hero_head_mail{ /*W3 school*/
+    a.hero__head__mail{ /*W3 school*/
     color:#eae2d0;
     text-decoration:none;
 }
@@ -373,27 +394,27 @@ width: 30%;
     border-top: solid #d27528 10px;
 }
 
-.footer_heading{
+.footer__heading{
     font-size: 25px;
 }
 
-.footer_kontakt{ 
+.footer__kontakt{ 
     padding: 10px;
     margin: 0;  
     width: 50%;
 }
 
-.footer_tekt{
+.footer__tekt{
     font-size: 20px;
 }
 
 
-.footer_logo{
+.footer__logo{
     width:150px;
     text-align:right;
 }
 
-.footer_logo_container{
+.footer__logo_container{
     display: flex;
     text-align: right;
     width: 50%;
@@ -411,11 +432,11 @@ width: 30%;
         height: 750x; 
     }
     
-    .footer_heading{
+    .footer__heading{
         font-size: 20px;
     }
 
-    .footer_kontakt{ 
+    .footer__kontakt{ 
         padding: 10px;
         margin: 0;  
         width: 100%;
@@ -423,11 +444,11 @@ width: 30%;
         font-size: 10px;
     }
     
-    .footer_logo{
+    .footer__logo{
         width: 50px;
     }
     
-    .footer_logo_container {
+    .footer__logo_container {
         display: flex;
         width: 100%;
         justify-content: center;
