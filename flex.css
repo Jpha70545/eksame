@@ -22,7 +22,7 @@ body{
     
 }
 
-.nav ul{ /*W3 school*/
+.nav ul{/*W3 school navigation */
         background-color: #eae2d0;
         height: 100px;
             display: flex;
@@ -96,11 +96,11 @@ body{
             width: 100%;    
     }
 }
-    /*-----------------FORSIDE ------------------------------*/
+                                    /*-- FORSIDE -*/
 
 
 
-.hero__image{ /*W3 school*/
+.hero__image{ /*W3 school Hero */
     background-image:url(billeder/forside.jpg);
     background-position: center;
     background-size: cover;
@@ -186,7 +186,7 @@ body{
     text-align: center;
     justify-content: center;   
 }
-.indhold > * {
+.indhold > * { /* THOMAS - alle elementer som er under indhold, skal have en wide på 50% Sodaselector*/
 width: 50%;
 }
 
