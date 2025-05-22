@@ -60,12 +60,6 @@ body{
 
     /*-----------------------------------------------*/
 
-/*@media screen and (max-width: 400px){
-    section{ 
-      
-        flex-direction: column;
-        text-align: center;
-      font-size: 10px;} */
 
     /*-----------------------------------------------*/
         
@@ -85,9 +79,12 @@ body{
             height: 100px;
             width: 100%;    
     }
-    /*-----------------------------------------------*/
 }
-.hero-image{/*Forside billede*/
+    /*-----------------------------------------------*/
+
+
+/*Forside billede*/
+.hero-image{
     background-image:url(billeder/forside.jpg);
     background-position: center;
     background-size: cover;
@@ -166,7 +163,14 @@ body{
     .intro_text{
         font-size: 20px;
     }
-
+    @media screen and (max-width: 400px) {
+        .intro_title{
+            font-size: 20px;
+        }
+        .intro_text{
+            font-size: 15px;
+        }
+    }
 
 .indhold{ 
    display: flex;
@@ -299,7 +303,7 @@ width: 30%;
 
                                                 /*SIDE 2*/
 
-.hero-imageko{ /* Kontakt billede*/
+.hero-kontakt{ /* Kontakt billede*/
   
     background-image:url(billeder/mig.jpg);
     height: auto;
@@ -312,46 +316,47 @@ width: 30%;
     padding-bottom: 300px;
     padding-top: 300px;
     align-content: center;
-    border-bottom:solid #d27528 10px;
+    border-top:solid #d27528 10px;
     }
 
    
-    .hero_titleko{ /* Kontakt navn*/
+    .hero_kontakt_title{ 
         font-size: 50px;
         color: #eae2d0;
         text-align: left;
-        
-    
     }
-    .hero-3{/* mail og tlf.*/
-        font-size: 50px;
+
+    .hero_head_mail{
+        font-size: 30px;
         color: #eae2d0;
         text-align: left; 
     }
-a.style { /*W3 school*/
+
+    a.hero_head_mail{ /*W3 school*/
     color:#eae2d0;
     text-decoration:none;
 }
-/*@media screen and (max-width: 400px) { /* Kontakt billede*/
-.hero ko{ 
-    height: 50vh;
-    padding: 10px;
-        
-    }
-   
-    .hero-2ko{/* Kontakt navn*/
-        font-size: 40px;
-        color: #eae2d0;
-        text-align: center;
-        
-        
-    }
-    .hero-3ko{/* mail og tlf.*/
-        font-size: 20px;
-        color: #eae2d0;
-        text-align: center; 
-    }
 
+@media screen and (max-width: 400px) {/* Kontakt billede*/
+
+.info_title{
+    font-size: 15px;
+}
+   
+.hero-kontakt{
+    height: 50%;/*tilpasser sig havldelen af skærmen*/
+    padding: 10px; /* Mindre padding for små skærme */
+}
+
+.hero_kontakt_title{
+    font-size: 15px; /* Dynamisk tekststørrelse */
+    padding: 5px;
+}
+.hero_head_mail {
+        font-size: 10px; /* Dynamisk tekststørrelse */
+        padding:5px
+}
+}
 
 
 
