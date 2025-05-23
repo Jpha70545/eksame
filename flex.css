@@ -374,17 +374,25 @@ width: 50%;
 
 @media screen and (max-width: 400px) {/* Kontakt billede*/
 
+.hero__kontakt{ 
+    
+    padding: 10px; 
+}
+
+
 .info_title{
-    font-size: 15px;
+    font-size: 10px;
+    
 }
    
 .hero-kontakt{
+    
     height: 50%;
     padding: 10px; 
 }
 
 .hero_kontakt_title{
-    font-size: 15px; 
+    font-size: 10px; 
     padding: 5px;
 }
 .hero_head_mail {
@@ -445,7 +453,7 @@ width: 50%;
         flex-direction: column;
         align-items: center;
         padding:10px 30px;
-        height: 750px; 
+        height: auto; 
     }
     
     .footer__heading{
