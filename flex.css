@@ -172,7 +172,7 @@ body{
         font-size: 20px;
         font-family:Arial, Helvetica, sans-serif
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 600px) {
         .intro__title{
             font-size: 20px;
         }
@@ -259,7 +259,7 @@ width: 50%;
   }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     .indhold{ 
         display: flex;
         flex-direction: column;
@@ -276,13 +276,13 @@ width: 50%;
         background-color: white;
          padding: 20px;
          margin: 20px;
-         border-radius: 8px;
+         border-radius: 10px;
         width: 50%;
         height: auto;
         
      }
     .box__title{
-        font-size: 10px;
+        font-size: 20px;
     }
     .box__image{ 
         width: 100%;
