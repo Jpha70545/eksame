@@ -1,29 +1,35 @@
 body{
-    background-color:#eae2d0;
+    background-color:#EDE7DD;
     height: 100%;
     margin: 0;
-   font-family: 'Times New Roman', Times, serif
+    font-family:'Noto Serif', serif;
+ 
   }
 
 
-.header_containe{ /*Navigation*/
+  
+
+.header_container{ /*Navigation*/
     display: flex;
     flex-direction: column;
     width: auto;
-    border-bottom: solid #d27528 10px;
+    background-color: #eae2d0;
+   
+    
 }
 
 
 .nav{
     justify-content: center;
     text-align: center;
+    font-family:'Montserrat', sans-serif;
     font-size: 20px;
     border-bottom: solid #d27528 10px;
     
 }
 
 .nav ul{/*W3 school navigation */
-        background-color: #eae2d0;
+       
         height: 100px;
             display: flex;
             flex-direction: row;
@@ -39,6 +45,9 @@ body{
     a:link {
         text-decoration: none;  /* fjerner understregen*/
         color: black
+    }
+    a:visited{
+        color:black;
     }
   
     .info{
@@ -56,10 +65,10 @@ body{
         padding:10px;
         line-height: 30px;
         margin:20px;
-        font-family:Arial, Helvetica, sans-serif
+        font-family:'monsterrat', sans-serif;
     }
     
-    @media screen and (max-width:400px){/*max= den størrelse og under, det er det højeste skærmen må være*/
+    @media screen and (max-width:600px){/*max= den størrelse og under, det er det højeste skærmen må være*/
     
     .nav ul{
             flex-direction: column;      
@@ -83,11 +92,11 @@ body{
     background-color: #d27528;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width:100%;     
+ 
 }
 
-@media screen and (max-width:400px){/*max= den størrelse og under, det er det højeste skærmen må være*/
+@media screen and (max-width:600px){/*max= den størrelse og under, det er det højeste skærmen må være*/
         .main{
             display: flex;
             flex-direction: column;
@@ -108,7 +117,7 @@ body{
     padding-left: 50px;
     padding-bottom: 300px;
     padding-top: 300px;
-    border-bottom: solid #d27528 10px;
+    font-family:'Noto Serif', serif;
     
 }
 .hero__title{ 
@@ -116,16 +125,19 @@ body{
     color: #eae2d0;
     text-align: center;
     justify-content: center;
+    font-family:'Noto Serif', serif;
 }
 .hero__head{ 
-    font-size: 40px;
+    font-size: 30px;
     color: #eae2d0;
     text-align: center;  
+    font-family:'monsterrat', sans-serif;
 }
 .hero__text{ 
     font-size: 30px;
     color: #eae2d0;
     text-align: center;  
+    font-family:'monsterrat', sans-serif;
 }
 
 @media screen and (max-width: 400px) {
@@ -155,22 +167,23 @@ body{
     
 
                                             /*SIDE 1*/ 
-
+h1{
+    font-family:'Noto Serif', serif;
+    font-size: 40px;
+}
   .intro{
         
         display: flex;
         flex-direction: column;
         text-align: center;
-        border-bottom: solid #d27528 10px;
         padding:20px
-    }
-    .intro__title{
-        font-size: 30px;
         
     }
+   
+        
     .intro__text{
-        font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif
+        font-size: 25px;
+        font-family:'monsterrat', sans-serif;
     }
     @media screen and (max-width: 600px) {
         .intro__title{
@@ -183,18 +196,17 @@ body{
 
 .indhold{ 
    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center; 
-    flex-wrap: wrap;  
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     justify-content: center;   
+    font-family:'monsterrat', sans-serif;
+    font-weight: bold;
 }
-.indhold > * { /* THOMAS - alle elementer som er under indhold, skal have en wide på 50% Sodaselector*/
-width: 50%;
-}
+
+
 
 
 .box{   
@@ -207,13 +219,13 @@ width: 50%;
 }
 
 .box__title{
-    font-size: 30px;
-   
+    font-size: 40px;
+    font-family:'Noto Serif', serif;
   
 }
 .box__image{ 
 
-    padding:10px;
+    padding-bottom:10px;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -229,33 +241,15 @@ width: 50%;
     flex-wrap: wrap;
     width: 100%;
     height:auto;
-    padding: 10px;
+    padding-bottom: 10px;
     border-radius: 20px;
 }
 
 
-.box__dropdown { /*tekst bokse*/
   
-    display: inline-block;
-    display: block;
-  }
-  
-  .box__dropdown__content { /*projekt bokse*/
-    display: none;
-    background-color: #d27528;
-    font-family:Arial, Helvetica, sans-serif;
-    
-    padding: 12px 16px;
-    border:solid #d27528 5px;
-    border-radius: 8px;
-    
-  
-   
-  }
-  
- .box__dropdown:hover .box__dropdown__content { /*projekt bokse*/
-    display: block;
-    
+  .box__content { /*projekt bokse*/
+    font-family:'monsterrat', sans-serif;
+    border-top:solid #d27528 5px;
   }
 
 
@@ -263,14 +257,11 @@ width: 50%;
     .indhold{ 
         display: flex;
         flex-direction: column;
-       
         align-items: center; 
         flex-wrap: wrap;  
         font-size: 10px;
     }
-    .indhold > * {
-    width: 20%;
-    }
+    
     
     .box{   
         background-color: white;
@@ -287,7 +278,7 @@ width: 50%;
     .box__image{ 
         width: 100%;
         height: auto;
-        padding:10px;
+        
         border-radius: 20px;
     }
     
@@ -312,12 +303,7 @@ width: 50%;
         flex-direction:column;
         
       }
-      .box__dropdown__content { /*projekt bokse*/
-        display: none;
-        background-color: #d27528;
-        padding: 12px 16px;
-        border-radius: 8px;
-      }
+  
     }
 
 
@@ -333,6 +319,7 @@ width: 50%;
    font-size: 25px;
    margin:50px;
    text-align: center;
+   font-family:'monsterrat', sans-serif;
    
 }
 
@@ -352,7 +339,7 @@ width: 50%;
     padding-bottom: 300px;
     padding-top: 300px;
     align-content: center;
-    border-top:solid #d27528 10px;
+    
     }
 
    
@@ -366,16 +353,19 @@ width: 50%;
         font-size: 30px;
         color: #eae2d0;
         text-align: left; 
+        font-family:'monsterrat', sans-serif;
     }
     .hero__telefon{
         font-size: 30px;
         color: #eae2d0;
         text-align: left; 
+        font-family:'monsterrat', sans-serif;
     }
 
     a.hero__head__mail{ /*W3 school*/
     color:#eae2d0;
     text-decoration:none;
+    
 }
 
 @media screen and (max-width: 600px) {/* Kontakt billede*/
@@ -403,6 +393,7 @@ width: 50%;
 .hero_head_mail {
         font-size: 10px;
         padding:5px
+        
 }
 }
 
@@ -423,6 +414,7 @@ width: 50%;
 
 .footer__heading{
     font-size: 25px;
+    font-family:'Noto Serif', serif;
 }
 
 .footer__kontakt{ 
@@ -433,7 +425,7 @@ width: 50%;
 
 .footer__tekt{
     font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:'monsterrat', sans-serif;
 }
 
 
