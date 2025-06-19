@@ -70,7 +70,7 @@ body{
         padding:10px;
         line-height: 30px;
         margin:20px;
-        font-family:'monsterrat', sans-serif;
+        font-family:'Montserrat', sans-serif;
     }
     
     @media screen and (max-width:600px){/*max= den størrelse og under, det er det højeste skærmen må være*/
@@ -136,13 +136,13 @@ body{
     font-size: 30px;
     color: #eae2d0;
     text-align: center;  
-    font-family:'monsterrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 .hero__text{ 
     font-size: 30px;
     color: #eae2d0;
     text-align: center;  
-    font-family:'monsterrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 400px) {
@@ -188,8 +188,9 @@ h1{
         
     .intro__text{
         font-size: 25px;
-        font-family:'monsterrat', sans-serif;
+        font-family:'Montserrat', sans-serif;
     }
+
     @media screen and (max-width: 600px) {
         .intro__title{
             font-size: 20px;
@@ -207,8 +208,9 @@ h1{
     padding-bottom: 30px;
     text-align: center;
     justify-content: center;   
-    font-family:'monsterrat', sans-serif;
-    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+    
+    
 }
 
 
@@ -219,13 +221,16 @@ h1{
     padding: 20px;
     margin: 50px;
     border-radius: 8px;
-   width: 30%;
-   height: auto;
+    width: 30%;
+    height: auto;
+    border:solid #d27528;
 }
 
 .box__title{
-    font-size: 40px;
+    font-size: 30px;
     font-family:'Noto Serif', serif;
+    
+    
   
 }
 .box__image{ 
@@ -253,7 +258,7 @@ h1{
 
   
   .box__content { /*projekt bokse*/
-    font-family:'monsterrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
     border-top:solid #d27528 5px;
   }
 
@@ -317,14 +322,14 @@ h1{
 
 .info__kontakt{
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:'Montserrat', sans-serif;
 }
 
 .info__kontakt__title{
    font-size: 25px;
    margin:50px;
    text-align: center;
-   font-family:'monsterrat', sans-serif;
+   font-family:'Montserrat', sans-serif;
    
 }
 
@@ -358,13 +363,13 @@ h1{
         font-size: 30px;
         color: #eae2d0;
         text-align: left; 
-        font-family:'monsterrat', sans-serif;
+        font-family:'Montserrat', sans-serif;
     }
     .hero__telefon{
         font-size: 30px;
         color: #eae2d0;
         text-align: left; 
-        font-family:'monsterrat', sans-serif;
+        font-family:'Montserrat', sans-serif;
     }
 
     a.hero__head__mail{ /*W3 school*/
@@ -372,6 +377,7 @@ h1{
     text-decoration:none;
     
 }
+
 
 @media screen and (max-width: 600px) {/* Kontakt billede*/
 
@@ -394,14 +400,19 @@ h1{
 .hero_kontakt_title{
     font-size: 10px; 
     padding: 5px;
+    
 }
 .hero_head_mail {
         font-size: 10px;
         padding:5px
-        
+}
+.hero__telefon{
+    font-size: 20px;
+    color: #eae2d0;
+   
+   
 }
 }
-
 
 
                                         /* NEDERSTE DEL AF SIDEN*/
@@ -430,7 +441,8 @@ h1{
 
 .footer__tekt{
     font-size: 20px;
-    font-family:'monsterrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
+    color: black;
 }
 
 
